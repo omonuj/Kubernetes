@@ -1,0 +1,38 @@
+# Ignore kubeconfig if accidentally placed here
+.kube/
+*.kubeconfig
+*.conf
+
+# Ignore Helm or Kustomize output
+*.tgz
+*.temp.yaml
+*.rendered.yaml
+charts/
+kustomize-output/
+
+# Ignore local tooling or editor-specific files
+*.log
+*.tmp
+*.bak
+*.swp
+.DS_Store
+.idea/
+.vscode/
+
+# Ignore secrets or environment variables
+.env
+*.secret.yaml
+*secret*.yaml
+*.env.yaml
+
+# Ignore Kubernetes state output (if using automation)
+*.tfstate
+*.tfstate.backup
+*.tfplan
+.terraform/
+
+# Ignore docker build cache or images (if building locally)
+*.tar
+*.img
+*.dockerfile
+
